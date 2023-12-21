@@ -1,0 +1,11 @@
+const { launches } = require("../../models/lunches.model");
+
+function getAllLaunches(req, res) {
+  for (const value of launches.values()) {
+  }
+  return res.status(200).json(Array.from(launches.values()));
+}
+
+module.exports = {
+  getAllLaunches,
+};
